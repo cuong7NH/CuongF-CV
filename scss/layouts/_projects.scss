@@ -1,0 +1,125 @@
+
+
+.projects {
+    padding: 80px;
+    background-color: #fff;
+
+
+    .section-portfolio {
+        .portfolio__menu {
+            margin-bottom: 4rem;
+            li {
+                padding: 5px 15px;
+                margin: 0 5px;
+                cursor: pointer;
+                font-size: 16px;
+                color: #fff;
+                border-radius: 5px;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+            }
+        }
+        .portfolio-container {
+            .portfolio-item {
+                margin-bottom: 3rem;
+            }
+            .portfolio-wrap {
+                position: relative;
+                border-radius: 5px;
+                overflow: hidden;
+                cursor: pointer;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    top: 0;left: 0;right: 0;bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.7);
+                    opacity: 0;
+                    
+                }
+                &:hover  {
+                    &::before {
+                        opacity: 1;
+                        transition: 0.4s;
+                    }
+                    .portfolio-info {
+                        h3 {
+                            transform: translateY(0);
+                            transition: 0.4s;
+                            opacity: 1;
+                        }
+                        p {
+                            opacity: 1;
+                            transition: 0.4s;
+                        }
+                        .project-btn {
+                            a {
+                                &:nth-child(1) {
+                                    transform: translateX(0);
+                                    opacity: 1;
+                                    
+                                }
+                                &:nth-child(2) {
+                                    transform: translateX(0);
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+
+                   
+                }
+                img {
+                   
+                }
+                .portfolio-info {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    color: #fff;
+                    h3 {
+                        font-size: 2rem;
+                        margin-bottom: 1rem;
+                        transform: translateY(-30px);
+                        opacity: 0;
+                    }
+                    p {
+                        font-size: 16px;
+                        margin: 0;
+                        opacity: 0;
+                    }
+                    .project-btn {
+                        display: flex;
+                        margin-top: 2rem;
+                        a {
+                            transition: 0.4s;
+                            display: inline-block;
+                            min-width: 120px;
+                            padding: 5px 15px;
+                            margin: 0 5px ;
+                            cursor: pointer;
+                            color: #fff;
+                            border-radius: 15px;
+                            &:hover {
+                                opacity: 0.8 !important;
+                            }
+                            &:nth-child(1) {
+                                transform: translateX(-50px);
+                                opacity: 0;
+                            }
+                            &:nth-child(2) {
+                                transform: translateX(50px);
+                                opacity: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+.filter-active {
+    background-color: #2d3436 !important;
+}

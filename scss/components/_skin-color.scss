@@ -1,0 +1,217 @@
+
+
+
+
+
+.default {
+    color: $default;
+    &:hover {
+        &::after {
+            background-color: $default;
+        }
+    }
+    &::after {
+        background-color: $default;
+    }
+    a.btn-cv,a.btn-project {
+        background-color: $default;
+    }
+    li {
+        background-color: $default;
+
+    }
+    h3.type-skill {
+        &::after, &::before {
+            background-color: $default;
+        }
+    }
+    a#btn-go-top {
+        background-color: $default;
+    }
+}
+
+.skin1 {
+    color: $skin1;
+    &:hover {
+        &::after {
+            background-color: $skin1;
+        }
+    }
+    &::after {
+        background-color: $skin1;
+    }
+    a.btn-cv {
+        background-color: $skin1;
+    }
+    li {
+        background-color: $skin1;
+        
+    }
+    h3.type-skill {
+        &::after, &::before {
+            background-color: $skin1;
+        }
+    }
+    a#btn-go-top {
+        background-color: $skin1;
+    }
+}
+.skin2 {
+    color: $skin2;
+    &:hover {
+        &::after {
+            background-color: $skin2;
+        }
+    }
+    &::after {
+        background-color: $skin2;
+    }
+    a.btn-cv {
+        background-color: $skin2;
+    }
+    li {
+        background-color: $skin2;
+        
+    }
+    h3.type-skill {
+        &::after, &::before {
+            background-color: $skin2;
+        }
+    }
+    a#btn-go-top {
+        background-color: $skin2;
+    }
+}
+.skin3 {
+    color: $skin3;
+    &:hover {
+        &::after {
+            background-color: $skin3;
+        }
+    }
+    &::after {
+        background-color: $skin3;
+    }
+    a.btn-cv {
+        background-color: $skin3;
+    }
+    li {
+        background-color: $skin3;
+        
+    }
+    h3.type-skill {
+        &::after, &::before {
+            background-color: $skin3;
+        }
+    }
+    a#btn-go-top {
+        background-color: $skin3;
+    }
+}
+.skin4 {
+    color: $skin4;
+    &:hover {
+        &::after {
+            background-color: $skin4;
+        }
+    }
+    &::after {
+        background-color: $skin4;
+    }
+    a.btn-cv {
+        background-color: $skin4;
+    }
+    li {
+        background-color: $skin4;
+        
+    }
+    h3.type-skill {
+        &::after, &::before {
+            background-color: $skin4;
+        }
+    }
+    a#btn-go-top {
+        background-color: $skin4;
+    }
+}
+.skin5 {
+    color: $skin5;
+    &:hover {
+        &::after {
+            background-color: $skin5;
+        }
+    }
+    &::after {
+        background-color: $skin5;
+    }
+    a.btn-cv {
+        background-color: $skin5;
+    }
+    li {
+        background-color: $skin5;
+        
+    }
+    h3.type-skill {
+        &::after, &::before {
+            background-color: $skin5;
+        }
+    }
+    a#btn-go-top {
+        background-color: $skin5;
+    }
+}
+.skin6 {
+    color: $skin6;
+    &:hover {
+        &::after {
+            background-color: $skin6;
+        }
+    }
+    &::after {
+        background-color: $skin6;
+    }
+    a.btn-cv {
+        background-color: $skin6;
+    }
+    li {
+        background-color: $skin6;
+        
+    }
+    h3.type-skill {
+        &::after, &::before {
+            background-color: $skin6;
+        }
+    }
+    a#btn-go-top {
+        background-color: $skin6;
+    }
+}
+.skin7 {
+    color: $skin7;
+    &:hover {
+        &::after {
+            background-color: $skin7;
+        }
+    }
+    &::after {
+        background-color: $skin7;
+    }
+    a.btn-cv, a.btn-project {
+        background-color: $skin7;
+    }
+    li {
+        background-color: $skin7;
+        
+    }
+    h3.type-skill {
+        &::after, &::before {
+            background-color: $skin7;
+        }
+    }
+    a#btn-go-top {
+        background-color: $skin7;
+    }
+}
+
+
+

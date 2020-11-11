@@ -1,0 +1,36 @@
+
+
+
+.section-title {
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+    h2 {
+        font-size: 36px;
+        font-weight: 800;
+        text-transform: capitalize;
+        color: #000;
+        text-align: center;
+        position: relative;
+        line-height: 40px;
+        &::after {
+            position: absolute;
+            content: '';
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 5px;
+        }
+        &::before {
+            position: absolute;
+            content: '';
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 90px;
+            height: 1.5px;
+            background-color: #9c9c9c;
+        }
+    }
+    
+}

@@ -1,0 +1,196 @@
+
+
+header {
+    // background-color: #000;
+    background-color: transparent;
+
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    .container {
+        position: relative;
+    }
+
+
+}
+.header-show {
+    animation-name: headerAnimation;
+    animation-duration: .5s;
+}
+@keyframes headerAnimation {
+    from {transform: translateY(-30px);}
+    to  {transform: translateY(0px);}
+}
+.nav-bar {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    &:hover {
+        transition: 0.3s;
+        opacity: 0.9;
+    }
+    div {
+        width: 30px;
+        height: 5px;
+        border-radius: 4px;
+        display: none;
+        background-color: #fff;
+        transition: 0.3s;
+        &:nth-child(2) {
+            margin: 5px 0;
+        }
+        @include maxWidth(768px) {
+            display: block;
+        }
+        
+    }
+}
+.nav-bar.nav-close {
+    div {
+        &:nth-child(2) {
+            display: none;
+        }
+        &:nth-child(1) {
+            transform: translateY(2.5px) rotate(-45deg);
+        }
+        &:nth-child(3) {
+            transform: translateY(-2.5px) rotate(45deg);
+        }
+    }
+
+}
+.header {
+    padding: 15px 0;
+    display: flex;
+    @include flex(row, space-between, center,  wrap);
+    &__logo {
+        width: 170px;
+        a {
+            color: #fff;
+            font-size: 38px;
+            line-height: 43px;
+            font-weight: 800 ;
+            font-family: 'Turret Road', cursive;
+            padding-left: 7px;
+            span {
+                margin: 0 -7px;
+            }
+        }
+    }
+    &__menu {
+        @include flex(row, start, center, wrap);
+        @include maxWidth(768px) {
+            display: none;
+        }
+        li {
+            position: relative;
+            padding: 0 5px;
+            a {
+                font-size: 16px;
+                display: inline-block;
+                padding: 0 10px;
+                line-height: 43px;
+                font-size: 16px;
+                letter-spacing: 0.09em;
+                color: #fff;
+                font-weight: 500;
+            }
+            &::after {
+                position: absolute;
+                content: '';
+                width: 0px;
+                height: 1.5px;
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+           
+            &:hover {
+
+                &::after {
+                    transition: all .6s ease;
+                    width: 30px;
+                }
+            }
+        }
+        li.active {
+            &::after {
+                width: 30px;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.menu-mobile {
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 73px;
+    overflow: hidden;
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    display: none;
+    @include maxWidth(768px) {
+        display: block;
+    }
+    li {
+        padding: 10px 15px;
+        position: relative;
+        font-size: 18px;
+        letter-spacing: 0.09em;
+        max-width: 540px;
+        margin: 0 auto;
+        
+        &:nth-child(1) {
+            border-top: 1px solid #222;
+        }
+        a {
+            color: #fff;
+            font-size: 16px;
+            display: block;
+        }
+        &::after {
+            position: absolute;
+            content: '';
+            width: 0px;
+            height: 2px;
+
+        }   
+        &:hover {
+
+            &::after {
+                width: 30px;
+                transition: 0.7s;
+            }
+            
+        }
+        @include maxWidth(620px) {
+            padding-left: 50px;
+        }
+    }
+    li.active {
+        &::after {
+            width: 30px;
+        }
+        &:hover {
+            &::after {
+                width: 25px;
+            }
+        }
+    }
+
+}
+.menu-mobile.menu-open {
+    visibility: visible;
+    height: 234px;
+    opacity: 1;
+}
+
+

@@ -1,0 +1,118 @@
+
+
+.hero {
+    height: 100vh;
+    background-image: url(../img/bg/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 2s;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+
+    .down-btn {
+        z-index: 99;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        animation: down-btn 1s infinite;
+        a {
+            color: #fff;
+            font-size: 2.5rem;
+            svg {
+            }
+        }
+    }
+    .hero-content {
+        color: #fff;
+        position: absolute;
+        z-index: 99;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translate(0 , -50%);
+        text-align: center;
+        h1 {
+            font-size: 8rem;
+            letter-spacing: 0px;
+            font-weight: bold;  
+            animation: fade-down;
+            animation-duration: 2s;
+            @include maxWidth(992px) {
+                font-size: 6rem;
+
+            }
+            @include maxWidth(768px) {
+                font-size: 5rem;
+
+            }
+            
+            
+        }
+        p {
+            font-size: 3rem;
+            margin: 10px 0 20px;
+            animation: fade-up;
+            animation-duration: 2s;
+
+        }
+        
+    }
+}
+@keyframes down-btn {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(6px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    
+}
+
+@keyframes fade-down {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes fade-up {
+    from {
+        transform: translateY(150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-up-left {
+    from {
+        transform: translate(-150px, 150px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+@keyframes fade-up-right {
+    from {
+        transform: translate(150px, 150px);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+

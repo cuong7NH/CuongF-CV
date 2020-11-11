@@ -1,0 +1,21 @@
+
+
+
+.contact {
+    padding: 60px 0;
+    background-color: $bc-gray;
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+    .contact__item {
+        text-align: center;
+        i {
+            font-size: 3rem;
+        }
+        p {
+            margin: 2rem 0 0 0;
+            font-size: 16px;
+        }
+    }
+}

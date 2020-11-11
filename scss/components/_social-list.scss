@@ -1,0 +1,46 @@
+.social-list {
+    li {
+        display: inline-block;
+        margin: 0 10px;
+        
+        a {
+            color: #fff;
+            display: inline-block;
+            width:38px;
+            height: 38px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 16px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            &:hover {
+                transition: 0.3s;
+                transform: scale(1.03) rotate(360deg);
+            }
+        }
+        a.fb {
+            background-color: #2D5DA1;
+            animation: fade-up-left;
+            animation-duration: 2s;
+
+        }
+        a.instagram {
+            background-color: #DF7EA5;
+            animation: fade-up;
+            animation-duration: 2s;
+            
+        }
+        a.github {
+            background-color: #aaa69d;
+            animation: fade-up;
+            animation-duration: 2s;
+        }
+
+        a.linkedin {
+            background-color: #18dcff;
+            animation: fade-up-right;
+            animation-duration: 2s;
+        }
+    }
+}
