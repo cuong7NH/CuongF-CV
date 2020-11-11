@@ -62,9 +62,9 @@ for(let i = 0; i < headerMenuList.length; i++) {
 //--------------- Handel Change Background img ----------\\
 const heroSection = document.querySelector('#hero');
 const imagesHeroUrl = [
-    'url(../img/bg/bg.jpg)',
-    'url(../img/bg/bg1.jpg)',
-    'url(../img/bg/bg2.jpg)',
+    'url(img/bg/bg.jpg)',
+    'url(img/bg/bg1.jpg)',
+    'url(img/bg/bg2.jpg)',
 ];
 
 
